@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhammad Umair Fayyaz</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+    body{
+      background: linear-gradient(to right, #f2f2f2, #dddddd);
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      font-weight:900;
+      color:black;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#444;
+      margin-top:20px;
+    }
+
+    /* BUTTONS */
+
+    .button-section{
+      margin-top:50px;
+    }
+
+    .fancy-btn{
+      position: relative;
+      overflow: hidden;
+      padding: 18px 40px;
+      margin: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 15px;
+      text-decoration: none;
+      color: white;
+      background: black;
+      border: 3px solid black;
+      display: inline-block;
+      transition: all 0.4s ease;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .fancy-btn::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.3);
+      transition: 0.5s;
+    }
+
+    .fancy-btn:hover::before{
+      left: 100%;
+    }
+
+    .fancy-btn:hover{
+      background: white;
+      color: black;
+      transform: scale(1.12) rotate(-2deg);
+      box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+    }
+
+    .fancy-btn:active{
+      transform: scale(0.95);
+    }
+
+    @keyframes float{
+      0%{
+        transform: translateY(0px);
+      }
+
+      50%{
+        transform: translateY(-8px);
+      }
+
+      100%{
+        transform: translateY(0px);
+      }
+    }
+
+    /* CONTENT BOXES */
+
+    .section-box{
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      margin-top:40px;
+      box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+      transition:0.4s;
+    }
+
+    .section-box:hover{
+      transform:translateY(-5px);
+      box-shadow:0px 0px 25px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      font-weight:800;
+      margin-bottom:25px;
+    }
+
+    .club-title{
+      color:#111;
+      font-weight:bold;
+      margin-top:25px;
+    }
+
+    footer{
+      margin-top:50px;
+      background:black;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    /* ANIMATIONS */
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(-20px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0px);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HOME PAGE -->
+
+  <section class="hero">
+
+    <div>
+
+      <h1>
+        Welcome To The Page Of Muhammad Umair Fayyaz
+      </h1>
+
+     <p>
+        Hi I am Muhammad Umair Fayyaz known to many as Sabit.<br>
+        I made this website as a passion project<br>
+        So here you are feel free to explore.
+      </p>
+
+      <!-- BUTTONS -->
+
+      <div class="button-section">
+
+        <a href="#hobbies" class="fancy-btn">Hobbies</a>
+
+        <a href="#family" class="fancy-btn">Family</a>
+
+        <a href="#facts" class="fancy-btn">Random Facts</a>
+
+        <a href="#socials" class="fancy-btn">Socials</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+
+  <div class="container">
+
+    <!-- HOBBIES -->
+
+    <section id="hobbies" class="section-box">
+
+      <h2>My Hobbies</h2>
+
+      <p>
+        this section is soully based on my hobbies.I have more hobbies but iv decided to mention a few
+      </p>
+
+      <h3 class="club-title">Football</h3>
+
+      <p>
+        Football is one of the greatest sports in the world because it brings people together.
+        It is exciting, competitive, emotional, and full of unforgettable moments.
+        I love football because every match feels different and every second matters.
+
+        My favorite position is defender because I enjoy stopping attacks and protecting my team.
+        I love reading the game, making strong tackles, and winning important duels.
+        A great defender needs intelligence, strength, confidence, and leadership.
+        I believe I am best at this position because I stay calm under pressure and never give up.
+        I enjoy helping my team from the back and making crucial defensive plays.
+      
+      </p>
+
+      <h3 class="club-title">Real Madrid</h3>
+
+      <p>
+        Real Madrid is my favorite football club in La Liga.
+        The club is one of the most successful teams in football history.
+        Real Madrid has won many La Liga and Champions League trophies.
+        (and they are better than Barcalona OBV)
+      </p>
+
+      <h3 class="club-title">Formula 1</h3>
+
+      <p>
+        I love Formula 1 because of the speed, strategy, and excitement.
+      </p>
+
+      <h3 class="club-title">Ferrari</h3>
+
+      <p>
+        Ferrari is my favorite Formula 1 team because of its legendary history and passion.
+      </p>
+
+
+      <h3 class="club-title">Gaming</h3>
+      <p>I love Gaming its a great way to spend or kill time.I enjoy playing video games a lot.
+        I play games like FC26 and F126 I used to COD and i also played Enlisted. Roblox is also
+        included I also used to love Trailmakers and must not forget abput Minecraft</p>
+
+        <h3 class="club-title">Honarable mentions</h3>
+        <p>i also like doing thinks as- 
+           <p></p> 1)Reading(this could be its own section)</p>
+           <p></p> 2)writing stories</p>
+            <p></p>3)listening to songs</p>
+           <p></p> 4)yapping(one of my favorites)</p>
+            <p></p>5)playing board games(again this could be its own part)</p>
+           <p></p> 6)coding</p>
+            <p></p>7)annoying people</p>
+            <p></p>8)making lame jokes</p>
+            <p></p>9)business</p>
+            <p></p>10)sleeping</p>
+
+        </p>
+    </section>
+
+    <!-- FAMILY -->
+
+    <section id="family" class="section-box">
+
+      <h2>Family</h2>
+
+      <p>
+        I have a very happy and healthy family.
+        I have a litte sister whose name is Zafreen.My fathers
+        name is SM Belal Bhuiyan and my mother is Sigma Zesmin. thats about it.
+      </p>
+
+    </section>
+
+    <!-- RANDOM FACTS -->
+
+    <section id="facts" class="section-box">
+
+      <h2>Random Facts</h2>
+
+      <p>
+        
+      </p>
+
+    </section>
+
+    <!-- SOCIALS -->
+
+    <section id="socials" class="section-box">
+
+      <h2>Socials</h2>
+
+      <p><strong>Email:</strong> your-email@gmail.com</p>
+
+      <p><strong>Phone:</strong> 01617751562</p>
+      <p>please say something nice this took a long time to make</p>
+
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Muhammad Umair Fayyaz | Personal Website
+  </footer>
+
+</body>
+</html> 
